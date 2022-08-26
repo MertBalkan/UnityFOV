@@ -236,11 +236,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fovSettings:
-    fovValue: -0.328
+    fovValue: -0.812
     playerRadius: 5
     lineVector:
-      lineVector1: {x: -0.328, y: 0, z: 0.9446777}
-      lineVector2: {x: 0.328, y: 0, z: 0.9446777}
+      lineVector1: {x: -0.812, y: 0, z: 0.58365744}
+      lineVector2: {x: 0.812, y: 0, z: 0.58365744}
     player: {fileID: 878007936}
 --- !u!4 &377159442
 Transform:
