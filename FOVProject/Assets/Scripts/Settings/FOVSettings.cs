@@ -1,3 +1,4 @@
+using System.ComponentModel;
 using UnityEditor;
 using UnityEngine;
 
@@ -11,7 +12,9 @@ namespace fov
             [Range(-1f, 0f)] 
             public float fovValue;
             public float playerRadius;
+            
             public LineVector lineVector;
+            
             public GameObject player;
 
         }
@@ -32,9 +35,10 @@ namespace fov
             SetFOV();
             
             Handles.color = Color.white;
-            Handles.DrawWireDisc(fovSettings.player.transform.position, transform.up, fovSettings.playerRadius);
+            Handles.DrawWireDisc(fovSettings.player.transform.localPosition, transform.up, fovSettings.playerRadius);
 
             var playerPos = fovSettings.player.transform.localPosition;
+
             var linePos = fovSettings.lineVector.lineVector1 * fovSettings.playerRadius;
             Handles.color = Color.green;
             
@@ -57,7 +61,6 @@ namespace fov
             Handles.Label(playerPos + Vector3.forward * 0.8f, (angleRadian * Mathf.Rad2Deg).ToString());
             Handles.color = Color.yellow;
             Handles.DrawWireArc(playerPos, Vector3.up,  fovSettings.lineVector.lineVector1, angleRadian * Mathf.Rad2Deg, 1.0f, 2.0f);
-            Handles.color = Color.white;
         }
 #endif
         private void SetFOV()
