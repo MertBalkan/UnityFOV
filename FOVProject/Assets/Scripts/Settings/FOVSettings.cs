@@ -1,6 +1,7 @@
-using System.ComponentModel;
+using System.Reflection;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.Experimental.GlobalIllumination;
 
 namespace fov
 {
@@ -16,6 +17,7 @@ namespace fov
             public LineVector lineVector;
             
             public GameObject player;
+            public GameObject spotLight;
 
         }
 
@@ -28,15 +30,17 @@ namespace fov
             
         [SerializeField] private FOVStruct fovSettings;
         
-        
 #if UNITY_EDITOR
         private void OnDrawGizmos()
         {
             SetFOV();
+
+            var spotLight = fovSettings.spotLight.GetComponent<Light>();
             
             Handles.color = Color.white;
             Handles.DrawWireDisc(fovSettings.player.transform.localPosition, transform.up, fovSettings.playerRadius);
 
+            
             var playerPos = fovSettings.player.transform.localPosition;
 
             var linePos = fovSettings.lineVector.lineVector1 * fovSettings.playerRadius;
@@ -57,6 +61,9 @@ namespace fov
 
             var dotProduct = Vector3.Dot( fovSettings.lineVector.lineVector1,  fovSettings.lineVector.lineVector2);
             var angleRadian = Mathf.Acos(dotProduct);
+
+            spotLight.spotAngle = angleRadian * Mathf.Rad2Deg;
+            spotLight.range = fovSettings.playerRadius;
             
             Handles.Label(playerPos + Vector3.forward * 0.8f, (angleRadian * Mathf.Rad2Deg).ToString());
             Handles.color = Color.yellow;
