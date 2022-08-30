@@ -167,9 +167,9 @@ Light:
   m_Type: 0
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 50
-  m_Range: 6.65
-  m_SpotAngle: 67.00865
+  m_Intensity: 5
+  m_Range: 7.89
+  m_SpotAngle: 51.570583
   m_InnerSpotAngle: 1
   m_CookieSize: 10
   m_Shadows:
@@ -212,7 +212,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: NaN, y: NaN, z: 0.01171875, w: 22}
+  m_BoundingSphereOverride: {x: 4.5904e-41, y: 315314700, z: 4.5904e-41, w: 9.403955e-38}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -330,11 +330,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fovSettings:
-    fovValue: -0.552
-    playerRadius: 5.85
+    fovValue: -0.435
+    playerRadius: 7.89
     lineVector:
-      lineVector1: {x: -0.552, y: 0, z: 0.8338442}
-      lineVector2: {x: 0.552, y: 0, z: 0.8338442}
+      lineVector1: {x: -0.435, y: 0, z: 0.9004305}
+      lineVector2: {x: 0.435, y: 0, z: 0.9004305}
     player: {fileID: 878007936}
     spotLight: {fileID: 154315999}
 --- !u!4 &377159442
@@ -344,7 +344,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 377159440}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 2.393, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -443,8 +443,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 878007936}
-  m_LocalRotation: {x: 0.0007504035, y: -0, z: -0, w: 0.9999997}
-  m_LocalPosition: {x: 0, y: 0.8, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -452,7 +452,7 @@ Transform:
   - {fileID: 154316000}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0.086, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &878007941
 MonoBehaviour:
   m_ObjectHideFlags: 0

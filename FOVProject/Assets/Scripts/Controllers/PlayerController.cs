@@ -1,11 +1,4 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Numerics;
-using UnityEditor;
 using UnityEngine;
-using UnityEngine.Rendering.VirtualTexturing;
-using Vector3 = UnityEngine.Vector3;
 
 namespace fov
 {
@@ -15,10 +8,7 @@ namespace fov
         private Vector3 _mousePos;
         private Vector3 _direction;
 
-        private void Update()
-        {
-            PlayerLook();
-        }
+        private void Update() => PlayerLook();
 
         private void PlayerLook()
         {
