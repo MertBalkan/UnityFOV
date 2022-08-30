@@ -3,4 +3,6 @@
 Made this for understanding angles better in Unity!
 Hope this one contributes you!
 
-![vido](https://user-images.githubusercontent.com/43827959/186973949-dd894818-3c77-4666-bf11-6c434df2169f.gif)
+
+https://user-images.githubusercontent.com/43827959/187473301-b7b4eecf-ca30-4f7d-9d84-58175f410bb8.mp4
+
