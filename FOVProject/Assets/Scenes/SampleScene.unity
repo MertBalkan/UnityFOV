@@ -168,8 +168,8 @@ Light:
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 5
-  m_Range: 7.89
-  m_SpotAngle: 51.570583
+  m_Range: 23.45
+  m_SpotAngle: 60.79551
   m_InnerSpotAngle: 1
   m_CookieSize: 10
   m_Shadows:
@@ -212,7 +212,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 4.5904e-41, y: 315314700, z: 4.5904e-41, w: 9.403955e-38}
+  m_BoundingSphereOverride: {x: 4.1003012e-19, y: 2.2e-44, z: -2.4405384e-30, w: 9.188e-41}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -330,11 +330,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fovSettings:
-    fovValue: -0.435
-    playerRadius: 7.89
+    fovValue: -0.506
+    playerRadius: 23.45
     lineVector:
-      lineVector1: {x: -0.435, y: 0, z: 0.9004305}
-      lineVector2: {x: 0.435, y: 0, z: 0.9004305}
+      lineVector1: {x: -0.506, y: 0, z: 0.8625335}
+      lineVector2: {x: 0.506, y: 0, z: 0.8625335}
     player: {fileID: 878007936}
     spotLight: {fileID: 154315999}
 --- !u!4 &377159442
