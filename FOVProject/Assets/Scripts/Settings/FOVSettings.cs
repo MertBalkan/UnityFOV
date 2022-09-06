@@ -20,7 +20,6 @@ namespace fov
             public GameObject spotLight;
         }
 
-        [System.Serializable]
         public struct LineVector
         {
             public Vector3 lineVector1;
